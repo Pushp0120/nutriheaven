@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutri Heaven — Pure Dry Fruits &amp; Natural Foods, Hisar</title>
+<meta name="description" content="Handpicked, unadulterated dry fruits, dates, berries, honey and ghee. A family-run shop in Hisar trusted for purity and honest prices.">
+
+<!-- Fonts: Fraunces for headlines (warm, editorial serif with real character), Inter for body copy -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <svg class="logo-mark" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M15 27C15 27 5 21.5 5 13.5C5 8.5 8.8 5 13 5C14.6 5 15 6.5 15 6.5C15 6.5 15.4 5 17 5C21.2 5 25 8.5 25 13.5C25 21.5 15 27 15 27Z" stroke="#C9A24B" stroke-width="1.6"/>
+        <path d="M15 8V22" stroke="#C9A24B" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">Nutri Heaven</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="#products">Our Products</a>
+      <a href="#why">Why Nutri Heaven</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <!-- Replace with the shop's real WhatsApp number, digits only, country code first -->
+      <a href="https://wa.me/919090000000" class="btn btn-whatsapp header-whatsapp" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.36a9.9 9.9 0 0 0 4.62 1.15h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.13.79.83-3.05-.2-.31a8.14 8.14 0 0 1-1.28-4.4c0-4.5 3.66-8.16 8.17-8.16 4.5 0 8.16 3.66 8.16 8.16 0 4.51-3.66 8.3-8.06 8.3Zm4.47-6.11c-.24-.12-1.44-.71-1.67-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.35-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28Z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <!-- Swap hero-bg for a real photo of the shop counter / dry fruit display: images/hero-dryfruits.jpg -->
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="hero-kicker">258, Bishnoi Colony · Near HAU Gate No. 4 · Hisar</p>
+      <h1 class="hero-title">Pure dry fruits,<br>honestly priced.</h1>
+      <p class="hero-sub">Handpicked, unadulterated dry fruits and natural foods — sourced with care and sold the way a neighbourhood shop should: straight, fair, and fresh.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/919090000000" class="btn btn-gold" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a href="#products" class="btn btn-ghost">See our products</a>
+      </div>
+      <ul class="hero-trust">
+        <li>100% natural stock</li>
+        <li>Handpicked, never mixed</li>
+        <li>Honest, upfront prices</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORY STRIP ============ -->
+  <section class="category-strip" aria-label="Product categories">
+    <div class="category-scroll" id="categoryScroll">
+      <button class="pill is-active" data-category="all">All Products</button>
+      <button class="pill" data-category="dryfruits">Dry Fruits</button>
+      <button class="pill" data-category="dates">Dates</button>
+      <button class="pill" data-category="nuts">Nuts &amp; Seeds</button>
+      <button class="pill" data-category="berries">Berries</button>
+      <button class="pill" data-category="honeyghee">Honey &amp; Ghee</button>
+      <button class="pill" data-category="spices">Spices</button>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="products" id="products">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>What's on the shelf</h2>
+        <p>Every batch is checked by hand before it reaches a jar. Prices below are a starting guide — WhatsApp us for today's stock and weight.</p>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <!-- Replace each image div with a real product photo: images/products/<name>.jpg -->
+        <article class="product-card" data-category="spices">
+          <div class="product-image" style="background:linear-gradient(135deg,#4c5a34,#2f3a1f)"></div>
+          <div class="product-body">
+            <h3>Green Elaichi</h3>
+            <p>Bold, aromatic cardamom pods, sorted by hand.</p>
+            <div class="product-foot"><span class="price">from ₹450</span>
+              <a href="https://wa.me/919090000000" class="product-enquire" target="_blank" rel="noopener" aria-label="Enquire about Green Elaichi on WhatsApp">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="berries">
+          <div class="product-image" style="background:linear-gradient(135deg,#2e3f6e,#1c2740)"></div>
+          <div class="product-body">
+            <h3>Blueberry</h3>
+            <p>Sun-dried, naturally sweet, seeded.</p>
+            <div class="product-foot"><span class="price">from ₹380</span>
+              <a href="https://wa.me/919090000000" class="product-enquire" target="_blank" rel="noopener" aria-label="Enquire about Blueberry on WhatsApp">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="berries">
+          <div class="product-image" style="background:linear-gradient(135deg,#3a4d7e,#232c47)"></div>
+          <div class="product-body">
+            <h3>Blueberry, without seed</h3>
+            <p>The same fruit, deseeded for easy snacking.</p>
+            <div class="product-foot"><span class="price">from ₹420</span>
+              <a href="https://wa.me/919090000000" class="product-enquire" target="_blank" rel="noopener" aria-label="Enquire about Blueberry without seed on WhatsApp">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="dates">
+          <div class="product-image" style="background:linear-gradient(135deg,#5c3a22,#31200f)"></div>
+          <div class="product-body">
+            <h3>Khazoor</h3>
+            <p>Soft, natural-sweet dates for daily eating.</p>
+            <div class="product-foot"><span class="price">from ₹260</span>
+              <a href="https://wa.me/919090000000" class="product-enquire" target="_blank" rel="noopener" aria-label="Enquire about Khazoor on WhatsApp">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="dates">
+          <div class="product-image" style="background:linear-gradient(135deg,#7a4a20,#3d2610)"></div>
+          <div class="product-body">
+            <h3>Golden Khazoor</h3>
+            <p>A premium date variety, rich and caramel-soft.</p>
+            <div class="product-foot"><span class="price">from ₹520</span>
+              <a href="https://wa.me/919090000000" class="product-enquire" target="_blank" rel="noopener" aria-label="Enquire about Golden Khazoor on WhatsApp">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="berries">
+          <div class="product-image" style="background:linear-gradient(135deg,#6e2436,#3c141f)"></div>
+          <div class="product-body">
+            <h3>Cranberry</h3>
+            <p>Tart-sweet, lightly sun-dried, no added colour.</p>
+            <div class="product-foot"><span class="price">from ₹340</span>
+              <a href="https://wa.me/919090000000" class="product-enquire" target="_blank" rel="noopener" aria-label="Enquire about Cranberry on WhatsApp">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="nuts">
+          <div class="product-image" style="background:linear-gradient(135deg,#8a6a3c,#4a3820)"></div>
+          <div class="product-body">
+            <h3>Raw Peanuts</h3>
+            <p>Fresh-shelled, unroasted, straight from the crate.</p>
+            <div class="product-foot"><span class="price">from ₹120</span>
+              <a href="https://wa.me/919090000000" class="product-enquire" target="_blank" rel="noopener" aria-label="Enquire about Raw Peanuts on WhatsApp">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="honeyghee">
+          <div class="product-image" style="background:linear-gradient(135deg,#b8842e,#6b4715)"></div>
+          <div class="product-body">
+            <h3>Honey</h3>
+            <p>Raw and unprocessed, bottled as it comes.</p>
+            <div class="product-foot"><span class="price">from ₹300</span>
+              <a href="https://wa.me/919090000000" class="product-enquire" target="_blank" rel="noopener" aria-label="Enquire about Honey on WhatsApp">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="honeyghee">
+          <div class="product-image" style="background:linear-gradient(135deg,#d9b45a,#8a6423)"></div>
+          <div class="product-body">
+            <h3>Desi Ghee</h3>
+            <p>Slow-churned the traditional way.</p>
+            <div class="product-foot"><span class="price">from ₹650</span>
+              <a href="https://wa.me/919090000000" class="product-enquire" target="_blank" rel="noopener" aria-label="Enquire about Desi Ghee on WhatsApp">Enquire</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="product-note">No results in a category yet — new stock is added regularly. <a href="https://wa.me/919090000000" target="_blank" rel="noopener">Ask us on WhatsApp</a> for anything not listed here.</p>
+    </div>
+  </section>
+
+  <!-- ============ WHY NUTRI HEAVEN ============ -->
+  <section class="why" id="why">
+    <div class="section-inner">
+      <div class="why-grid">
+        <div class="why-item">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12l5 5L20 6" stroke="#C9A24B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Handpicked quality</h3>
+          <p>Every batch is sorted by hand before it goes on the shelf — no shortcuts, no mixing grades.</p>
+        </div>
+        <div class="why-item">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12l5 5L20 6" stroke="#C9A24B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>No adulteration</h3>
+          <p>What you taste is what it is — no added colour, no bulking, no cutting corners on freshness.</p>
+        </div>
+        <div class="why-item">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12l5 5L20 6" stroke="#C9A24B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Fair, honest prices</h3>
+          <p>Prices are set to be fair to the neighbourhood, not to what the market can be pushed to bear.</p>
+        </div>
+        <div class="why-item">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12l5 5L20 6" stroke="#C9A24B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Local and fresh</h3>
+          <p>Small, frequent stock runs instead of large storage — so what you buy is recently in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STOCK NOTE / LOW-KEY URGENCY ============ -->
+  <section class="stock-note">
+    <div class="section-inner stock-note-inner">
+      <p><strong>Fresh in this week:</strong> Golden Khazoor and raw peanuts, both newly restocked. Come by or send a WhatsApp message to check what's in before you visit.</p>
+      <a href="https://wa.me/919090000000" class="btn btn-gold-outline" target="_blank" rel="noopener">Check today's stock</a>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="reviews" id="reviews">
+    <div class="section-inner">
+      <div class="section-head section-head-light">
+        <h2>What Hisar is saying</h2>
+        <p class="rating-line">4.8 out of 5 on Google Reviews · based on customer visits to the shop</p>
+      </div>
+
+      <div class="review-scroll">
+        <figure class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>Great service and very professional. I'm definitely coming back again.</blockquote>
+          <figcaption>Rekha Agrawal <span>· Verified Google Review</span></figcaption>
+        </figure>
+        <figure class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>The quality is genuinely better than what I was buying before. The dates especially are worth the trip.</blockquote>
+          <figcaption>Placeholder Name <span>· Verified Google Review</span></figcaption>
+        </figure>
+        <figure class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>Ordered on WhatsApp and picked up the same evening. Easy, and everything was fresh.</blockquote>
+          <figcaption>Placeholder Name <span>· Verified Google Review</span></figcaption>
+        </figure>
+      </div>
+      <!-- Replace placeholder reviews above with real Google reviews before launch -->
+    </div>
+  </section>
+
+  <!-- ============ STORY ============ -->
+  <section class="story">
+    <div class="section-inner story-inner">
+      <!-- Replace with a real photo of Pardeep Sheoran in the shop: images/owner-shop.jpg -->
+      <div class="story-image" aria-hidden="true"></div>
+      <div class="story-text">
+        <h2>Run by hand, not by scale</h2>
+        <p>Nutri Heaven started as one shop in Bishnoi Colony with a simple idea: sell dry fruits the way you'd want them sold to your own family. Pardeep Sheoran sources and checks stock in person, batch by batch, rather than buying in bulk from wherever is cheapest.</p>
+        <p>It stays small on purpose. That's what lets us tell you honestly what's fresh this week, and what to skip until the next one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT / CONTACT ============ -->
+  <section class="visit" id="visit">
+    <div class="section-inner visit-inner">
+      <div class="visit-info">
+        <h2>Visit the shop</h2>
+        <dl class="visit-details">
+          <div>
+            <dt>Address</dt>
+            <dd>258, Siwach Complex, Bishnoi Colony, near HAU Gate No. 4, Sector 15, Hisar</dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <!-- Replace with the shop's real phone number -->
+            <dd><a href="tel:+919090000000">+91 90900 00000</a></dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Mon – Sat, 10:00 AM – 9:00 PM<br>Sunday, 11:00 AM – 6:00 PM</dd>
+          </div>
+        </dl>
+        <div class="visit-actions">
+          <a href="https://wa.me/919090000000" class="btn btn-gold" target="_blank" rel="noopener">Message on WhatsApp</a>
+          <a href="#" class="btn btn-ghost-light" target="_blank" rel="noopener">Facebook Page</a>
+        </div>
+      </div>
+
+      <div class="visit-map">
+        <!-- Replace src with the shop's real Google Maps embed link -->
+        <iframe
+          title="Nutri Heaven location on Google Maps"
+          src="https://www.google.com/maps?q=HAU+Gate+No+4+Hisar&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="section-inner">
+      <div class="contact-form-wrap">
+        <h3>Or send us a message</h3>
+        <p>We'll reply on WhatsApp or by phone, usually the same day.</p>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            <span class="form-error" id="phoneError"></span>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <!--
+            This form is front-end only. Before launch, connect it to a form
+            service (e.g. Formspree, EmailJS) or a small backend so messages
+            actually reach the shop by email/SMS.
+          -->
+          <button type="submit" class="btn btn-gold">Send message</button>
+          <p class="form-success" id="formSuccess" role="status" hidden>Thanks — your message is noted. We'll get back to you shortly.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UPDATES SIGNUP ============ -->
+  <section class="updates">
+    <div class="section-inner updates-inner">
+      <div>
+        <h2>Get fresh stock updates</h2>
+        <p>A short WhatsApp note when new dates, berries or honey come in — nothing more.</p>
+      </div>
+      <form class="updates-form" id="updatesForm">
+        <label for="updatesPhone" class="sr-only">Phone number</label>
+        <input type="tel" id="updatesPhone" placeholder="Your WhatsApp number" required>
+        <button type="submit" class="btn btn-gold">Notify me</button>
+      </form>
+      <p class="form-success" id="updatesSuccess" role="status" hidden>Saved — we'll message you when fresh stock comes in.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="section-inner footer-grid">
+    <div class="footer-brand">
+      <span class="logo-text footer-logo">Nutri Heaven</span>
+      <p>Pure dry fruits and natural foods, sold the honest way.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="#products">Our Products</a>
+      <a href="#why">Why Nutri Heaven</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit Us</a>
+    </div>
+    <div>
+      <h4>Products</h4>
+      <a href="#products">Dry Fruits &amp; Nuts</a>
+      <a href="#products">Dates &amp; Berries</a>
+      <a href="#products">Honey &amp; Ghee</a>
+      <a href="#products">Spices</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>258, Siwach Complex, Bishnoi Colony<br>near HAU Gate No. 4, Hisar</p>
+      <a href="tel:+919090000000">+91 90900 00000</a>
+    </div>
+    <div class="footer-social">
+      <h4>Follow</h4>
+      <div class="social-icons">
+        <a href="#" aria-label="Nutri Heaven on Facebook" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5H16l.5-3.5h-3V7.8c0-1 .3-1.7 1.8-1.7H16.6V3.1C16 3 15 3 13.9 3c-2.3 0-3.9 1.4-3.9 4v2.9H7.5V13H10v8h3.5Z"/></svg>
+        </a>
+        <a href="#" aria-label="Nutri Heaven on Instagram" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47.66.25 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.42.06 4.13s-.01 3.06-.06 4.13c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.63.25-1.36.42-2.42.47-1.06.05-1.42.06-4.12.06s-3.06-.01-4.13-.06c-1.06-.05-1.79-.22-2.42-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.13c.05-1.06.22-1.79.47-2.42a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.3 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 1-2.34 0 1.17 1.17 0 0 1 2.34 0Z"/></svg>
+        </a>
+        <a href="https://wa.me/919090000000" aria-label="Message Nutri Heaven on WhatsApp" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.36a9.9 9.9 0 0 0 4.62 1.15h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Nutri Heaven. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
